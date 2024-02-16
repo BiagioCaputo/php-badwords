@@ -2,6 +2,7 @@
 
 $user_text = $_POST["user-text"];
 $censorship = $_POST["censorship"];
+$censored = str_replace($censorship, '***', $user_text)
 
 ?>
 
@@ -15,7 +16,16 @@ $censorship = $_POST["censorship"];
 </head>
 <body>
     <main>
-        <h1><?php echo $user_text; ?></h1>
+        <div>
+            <h1>This is your text:</h1>
+            <p><?php echo $user_text; ?></p>
+            <h4>Text's length:<?php echo strlen($user_text);?></h4>
+        </div>
+        <div>
+            <h1>This is your censored text:</h1>
+            <p><?php echo $censored; ?></p>
+            <h4>Censored text's length:<?php echo strlen($censored);?></h4>
+        </div>
     </main>
     
 </body>
