@@ -9,11 +9,11 @@
 <body>
     <main>
             <div class="box p-5">
-                <form action="./server.php" method="POST">
+                <form action="./script.php" method="POST">
                     <label for="user-text">Write something:</label>
-                    <textarea id="user-text" style="height: 100px; width:50%"></textarea>
+                    <textarea id="user-text" name="user-text" style="height: 100px; width:50%"></textarea>
                     <label for="censorship">Badwords:</label>
-                    <input type="text" id="censorship">
+                    <input type="text" id="censorship" name="censorship">
                     <button type="submit" class="mt-4">
                         Badwords censorship
                     </button>
