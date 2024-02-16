@@ -7,6 +7,24 @@
     <title>php-badwords</title>
 </head>
 <body>
-    <h1 class="text-center">prova</h1>
+    <main>
+            <div class="box p-5">
+                <form action="./server.php" method="POST">
+                    <label for="user-text">Write something:</label>
+                    <textarea id="user-text" style="height: 100px; width:50%"></textarea>
+                    <label for="censorship">Badwords:</label>
+                    <input type="text" id="censorship">
+                    <button type="submit" class="mt-4">
+                        Badwords censorship
+                    </button>
+                </form> 
+            </div>
+    </main>
 </body>
 </html>
+
+<style>
+    form > *{
+        display:block;
+    }
+</style>
